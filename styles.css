@@ -56,6 +56,7 @@ body {
     align-self: center;
     font-family: 'Bitcount Prop Double';
     font-size: xxx-large;  
+    scroll-margin-top: 5px;
 }
 .pro {
     grid-area: pro;
@@ -63,13 +64,15 @@ body {
     align-self: center;
     font-family: 'Bitcount Prop Double';
     font-size: xxx-large;  
+    scroll-margin-top: 5px;
 }
 .int {
     grid-area: int;
     justify-self: center;
     align-self: center;
     font-family: 'Bitcount Prop Double';
-    font-size: xxx-large;  
+    font-size: xxx-large;
+    scroll-margin-top: 5px;
 }
 .navbar {
     position:sticky;
@@ -135,6 +138,7 @@ td, th, table{
     font-size: xx-large;
     padding-left: 1em;  
     grid-area: cnt;
+    scroll-margin-top: 5px;
 }
 a {
     color: #F8F9FA;
