@@ -1,0 +1,202 @@
+html {
+    font-family: lora, sans-serif;
+    background-image: url(https://cdn.prod.website-files.com/64845ff44619a4f77cbc530c/64cb4d375fedd39d5beb487f_Group%2041090.svg);
+    scroll-behavior: smooth;
+    background-color: #151a22;
+    padding: auto;
+    color: #F8F9FA;
+    background-position: center;
+}
+    
+body {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    row-gap: 5%;
+    grid-template-areas: 
+       "intro intro intro"
+       "about about me "
+       "edu education education"
+       "projects projects pro"
+       "int interests interests"
+       "cntme cntme cnt";
+}
+
+.scroll-button{
+    padding: 0 1em;
+    color: #F8F9FA;
+    background-color: #374151;
+    text-decoration: none;
+}
+
+.Top {
+    text-align: center;
+    color: #F8F9FA;
+    
+    grid-area: intro;
+}
+
+#name{
+    font-size: xxx-large;
+    text-decoration: double;
+    text-shadow: #F8F9FA;
+}
+#about_me {
+    scroll-margin-top: 5px;
+    grid-area: me;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Bitcount Prop Double';
+    font-size: xxx-large;
+    
+}
+.edu {
+    grid-area: edu;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Bitcount Prop Double';
+    font-size: xxx-large;  
+}
+.pro {
+    grid-area: pro;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Bitcount Prop Double';
+    font-size: xxx-large;  
+}
+.int {
+    grid-area: int;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Bitcount Prop Double';
+    font-size: xxx-large;  
+}
+.navbar {
+    position:sticky;
+}
+.about_me {
+    grid-area: about;
+}
+.education {
+    justify-self: center;
+    text-shadow: 1px #151a22;
+    grid-area: education;
+}
+td, th, table{
+    text-align: center;
+    border: 1px solid black;
+    padding: 2.5%;
+    border-collapse: collapse;
+    word-break: break-all;
+}
+.projects {
+    grid-area: projects;
+}
+.interests{
+    grid-area: interests;
+    align-self: center;
+}
+
+.frosted-glass {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+.frosted-button {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
+    transition: all 0.3s ease;
+}
+.frosted-button:hover{
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.cntme {
+    display: inline;
+    grid-area: cntme;
+}
+.cnt {
+    justify-self: center;
+    align-self: center;
+    font-family: 'Bitcount Prop Double';
+    font-size: xx-large;
+    padding-left: 1em;  
+    grid-area: cnt;
+}
+a {
+    color: #F8F9FA;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "intro"
+            "about"
+            "me"
+            "edu"
+            "education"
+            "projects"
+            "pro"
+            "int"
+            "interests"
+            "cntme"
+            "cnt";
+        row-gap: 2em;
+        padding: 1em;
+    }
+
+    #name {
+        font-size: 2rem;
+    }
+
+    #about_me,
+    .edu,
+    .pro,
+    .int,
+    .cnt {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+
+    .frosted-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .cntme {
+        display: block;
+        text-align: center;
+    }
+
+    .education,
+    .projects,
+    .interests,
+    .about_me {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    html {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
