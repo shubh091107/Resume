@@ -100,7 +100,6 @@ td, th, table{
 }
 .interests{
     grid-area: interests;
-    align-self: center;
 }
 
 .frosted-glass {
