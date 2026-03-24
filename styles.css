@@ -71,7 +71,7 @@ body {
     justify-self: center;
     align-self: center;
     font-family: 'Bitcount Prop Double';
-    font-size: xxx-large;
+    font-size: xx-large;
     scroll-margin-top: 5px;
 }
 .navbar {
@@ -135,7 +135,7 @@ td, th, table{
     justify-self: center;
     align-self: center;
     font-family: 'Bitcount Prop Double';
-    font-size: xx-large;
+    font-size: xxx-large;
     padding-left: 1em;  
     grid-area: cnt;
     scroll-margin-top: 5px;
