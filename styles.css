@@ -1,3 +1,4 @@
+
 html {
     font-family: lora, sans-serif;
     background-image: url(https://cdn.prod.website-files.com/64845ff44619a4f77cbc530c/64cb4d375fedd39d5beb487f_Group%2041090.svg);
@@ -127,7 +128,8 @@ td, th, table{
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 .cntme {
-    display: inline;
+    align-self: center;
+    padding: 5%;
     grid-area: cntme;
 }
 .cnt {
